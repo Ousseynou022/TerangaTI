@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TerangaTI - Création Web & Dépannage Informatique</title>
+
+    <!-- Font Awesome (Icônes) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feuille de style CSS externe -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- En-tête / Navbar -->
+    <header>
+      <div class="container navbar">
+        <a href="#accueil" class="logo">
+          <i class="fa-solid fa-laptop-code"></i> TerangaTI
+        </a>
+        <button
+          class="mobile-toggle"
+          id="menuToggle"
+          aria-label="Ouvrir le menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="#accueil">Accueil</a>
+          <a href="#services">Services</a>
+          <a href="#apropos">À Propos</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="btn btn-primary">Demander un devis</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section 1: Accueil (Hero) -->
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Votre partenaire informatique de <span>confiance</span>
+          </h1>
+          <p class="hero-subtitle">
+            Création de sites web vitrines modernes et dépannage informatique
+            rapide à domicile pour particuliers et professionnels.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#services" class="btn btn-secondary"
+              >Découvrir nos services</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-card-preview">
+            <span class="preview-badge">
+              <i class="fa-solid fa-bolt"></i> Intervention Rapide
+            </span>
+            <div class="preview-item">
+              <div class="preview-icon"><i class="fa-solid fa-globe"></i></div>
+              <div>
+                <h4>Sites Web Vitrines</h4>
+                <p class="text-muted-sm">Sur-mesure, rapides et optimisés</p>
+              </div>
+            </div>
+            <div class="preview-item">
+              <div class="preview-icon"><i class="fa-solid fa-wrench"></i></div>
+              <div>
+                <h4>Dépannage à Domicile</h4>
+                <p class="text-muted-sm">Réparation, réseau & assistance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Services -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Nos Prestations</span>
+          <h2 class="section-title">
+            Des solutions adaptées à vos besoins informatiques
+          </h2>
+        </div>
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="service-title">Création de Sites Web Vitrines</h3>
+            <p class="service-desc">
+              Mettez en avant votre activité avec un site web moderne, élégant
+              et parfaitement adapté aux téléphones cellulaires et ordinateurs.
+            </p>
+            <ul class="service-features">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Design sur mesure &
+                moderne
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Adapté aux téléphones
+                (Responsive)
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Optimisé pour Google
+                (SEO)
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Formulaire de contact
+                inclus
+              </li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-house-laptop"></i>
+            </div>
+            <h3 class="service-title">Dépannage Informatique à Domicile</h3>
+            <p class="service-desc">
+              Un problème avec votre ordinateur ? Nous intervenons directement
+              chez vous pour résoudre tous vos soucis matériels et logiciels.
+            </p>
+            <ul class="service-features">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Suppression de virus et
+                ralentissements
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Réparation et nettoyage
+                matériel
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Configuration Wi-Fi et
+                imprimantes
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Sauvegarde et
+                récupération de données
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: À Propos -->
+    <section class="about" id="apropos">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <span class="section-subtitle">À Propos de moi</span>
+            <h2 class="section-title mb-1-5">
+              Passionné par la technologie, dévoué à votre service
+            </h2>
+            <p>
+              Fort de plusieurs années d'expérience en informatique, j'ai fondé
+              TerangaTI pour offrir des services de proximité accessibles à
+              tous.
+            </p>
+            <p>
+              Mon objectif est simple : rendre le numérique simple, rapide et
+              efficace pour vous. Que vous ayez besoin de booster la visibilité
+              de votre entreprise grâce à un site internet moderne ou de réparer
+              un ordinateur en panne, je mets mes compétences à votre service.
+            </p>
+
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Clients satisfaits</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">24/48h</div>
+                <div class="stat-label">Délai d'intervention</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="quote-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p class="quote-text">
+                "L'informatique ne devrait pas être une source de stress, mais
+                un outil simple au service de vos projets."
+              </p>
+              <div class="quote-author">— Fondateur de TerangaTI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Contact</span>
+          <h2 class="section-title">Discutons de votre projet</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div>
+              <h3>Coordonnées</h3>
+              <p>
+                N'hésitez pas à nous contacter par téléphone ou courriel pour
+                toute question ou demande de devis.
+              </p>
+
+              <div class="info-list">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <small class="info-label">Courriel</small>
+                    <div>
+                      <a href="mailto:terangati01@gmail.com" class="info-link">
+                        terangati01@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div>
+                    <small class="info-label">Téléphone</small>
+                    <div>
+                      <a href="tel:8192478730" class="info-link">
+                        (819) 247-8730
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <small class="info-label">Zone d'intervention</small>
+                    <div>Shawinigan et ses alentours (à domicile)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="availability">
+              <i class="fa-solid fa-clock"></i> Disponible du Lundi au Samedi
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <div id="alertSuccess" class="alert-message">
+              Merci ! Votre message a bien été envoyé. Je vous recontacterai
+              rapidement.
+            </div>
+            <form
+              id="formContact"
+              action="https://formspree.io/f/https://formspree.io/f/xjyybjel"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Jean Dupont"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Adresse courriel</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="jean.dupont@exemple.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="service">Service concerné</label>
+                <select
+                  id="service"
+                  name="service"
+                  class="form-control"
+                  required
+                >
+                  <option value="">Sélectionnez un service</option>
+                  <option value="web">Création de site web vitrine</option>
+                  <option value="depannage">
+                    Dépannage informatique à domicile
+                  </option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  placeholder="Décrivez votre besoin..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                Envoyer le message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pied de page (Footer) -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i class="fa-solid fa-laptop-code"></i> TerangaTI
+          </div>
+          <div class="footer-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2026 TerangaTI. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script JS externe -->
+    <script src="script.js"></script>
+  </body>
+</html>
